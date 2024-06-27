@@ -1,0 +1,11 @@
+Project: Inheritance and Composition in Object-Oriented Programming
+Object-oriented programming (OOP) principles help organize code and design the logic of applications. Among these principles, inheritance is commonly used to promote code reuse and flexibility. However, inheritance can introduce constraints and issues. Composition is an alternative approach that addresses some of these challenges.
+
+Inheritance and Composition are types of relationships between classes that support code reuse. Inheritance makes polymorphism possible, but can lock classes into a structure that may not be flexible enough in the face of change. Composition is more flexible but does not support polymorphism. Both composition and inheritance are techniques based on the principle of preserving sameness in diversity and silence in dynamism.
+
+This project demonstrates the differences between inheritance and composition using a Person and PersonWithJob example. Initially, we used inheritance, but encountered a problem that led to inconsistent behavior in the equals method.
+
+In the inheritance approach, the PersonWithJob class extends the Person class. This caused issues when comparing instances of Person and PersonWithJob, resulting in inconsistent equality checks.
+
+->Solution with Composition
+By using composition instead of inheritance, we encapsulated a Person object within the PersonWithJobComposition class. This approach provided a more flexible and modular design, resolving the issues encountered with inheritance.
